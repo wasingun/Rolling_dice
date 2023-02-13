@@ -12,7 +12,6 @@
         android:layout_height="wrap_content"
         android:textSize="30sp"
         android:layout_marginBottom="30dp"
-
         android:text="아!내가 쏜다!"
         app:layout_constraintBottom_toTopOf="@id/rolling"
         app:layout_constraintEnd_toEndOf="parent"
@@ -27,5 +26,69 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginBottom="20dp"
+        android:text="숫자 범위를 입력해주세요"
+        app:layout_constraintTop_toBottomOf="@id/rolling"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/minNumExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="최소값 : "
+        app:layout_constraintTop_toBottomOf="@id/explanation"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/minNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/explanation"
+        app:layout_constraintStart_toEndOf="@id/minNumExplanation"
+        android:layout_marginTop="22dp"
+        android:textSize="15sp"
+        android:text="1"
+        android:inputType="number"
+        />
+
+    <TextView
+        android:id="@+id/maxNumExplanation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:text="최대값 : "
+        app:layout_constraintTop_toBottomOf="@id/explanation"
+        app:layout_constraintEnd_toStartOf="@id/maxNum" />
+
+    <EditText
+        android:id="@+id/maxNum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/explanation"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="30dp"
+        android:textSize="15sp"
+        android:text="10"
+        android:inputType="number"
+        />
+
+
+
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
