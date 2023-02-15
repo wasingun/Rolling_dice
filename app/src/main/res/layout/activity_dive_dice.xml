@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".DiveDice">
+
 
     <TextView
         android:id="@+id/diceNum"
@@ -84,19 +85,5 @@
         android:text="10"
         android:inputType="number"
         />
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/navigation_main"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/navigation_main_menu"/>
-
-
-
-
-
-
-
 
 </androidx.constraintlayout.widget.ConstraintLayout>

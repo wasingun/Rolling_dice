@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/navigation_dice"
+        android:icon="@drawable/dice"
+        android:title="주사위 게임"/>
+
+    <item android:id="@+id/navigation_rps"
+        android:icon="@drawable/rps"
+        android:title="가위바위보"/>
+
+</menu>

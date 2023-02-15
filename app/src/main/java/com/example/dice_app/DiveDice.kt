@@ -6,10 +6,10 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 
-class MainActivity : AppCompatActivity() {
+class DiveDice : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_dive_dice)
         val min: EditText = findViewById(R.id.minNum)
         val max: EditText = findViewById(R.id.maxNum)
         val numberSet: TextView = findViewById(R.id.diceNum)
