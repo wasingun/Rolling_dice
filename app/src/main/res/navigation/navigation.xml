@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/dice_game">
+    <fragment
+        android:id="@+id/dice_game"
+        android:name="com.example.dice_app.DiceFragment"
+        android:label="dice_game" />
+    <fragment
+        android:id="@+id/calculator_game"
+        android:name="com.example.dice_app.CalculatorFragment"
+        android:label="calculator_game" />
+</navigation>

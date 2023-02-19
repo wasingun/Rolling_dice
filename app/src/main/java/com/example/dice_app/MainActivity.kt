@@ -5,24 +5,19 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import androidx.navigation.fragment.findNavController
+import androidx.navigation.ui.setupWithNavController
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val min: EditText = findViewById(R.id.minNum)
-        val max: EditText = findViewById(R.id.maxNum)
-        val numberSet: TextView = findViewById(R.id.diceNum)
-        val dice: Button = findViewById(R.id.rolling)
-        dice.setOnClickListener {
-            val min2: Int = Integer.parseInt(min.text.toString())
-            val max2: Int = Integer.parseInt(max.text.toString())
-            if (min2 > max2){
-                numberSet.text = "최소값이 최대값보다 큽니다."
-            } else {
-                val number = (min2..max2).random()
-                numberSet.text = number.toString()
-            }
+
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.navigation_menu)
+        val navController = supportFragmentManager.findFragmentById(R.id.container_main)?.findNavController()
+        navController?.let {
+            bottomNavigationView.setupWithNavController(it)
         }
     }
 }
